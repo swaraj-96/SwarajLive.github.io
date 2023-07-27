@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d171d6849c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--------------------------Header--------------------------------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/my-logo-final.png" class="logo">
+                 <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark menu" onclick="closemenu()"></i>
+                 </ul>
+                <i class="fa-solid fa-bars menu" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm  </h1>
+                <h1 class="reveal"><span>Swaraj</span> Pradhan</h1>
+                <a href="https://drive.google.com/drive/folders/1aXt6DKou8LZSq09dcBcN7uI5ejZ_KyMk?usp=drive_link" download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+    </div>
+    <!--------------------about--------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1" data-aos="fade-up">
+                    <img src="images/my pic.jpg">
+                </div>
+                <div class="about-col-2" data-aos="fade-up">
+                    <h1 class="sub-title para">About Me</h1>
+                    <p>Final-year undergraduate in Electrical
+                        Engineering from VSSUT, Burla. I'm a technology enthusiast
+                        with an avid interest in Web Development, ML & AI. Apart from these, 
+                        I love playing basketball, reading books & travelling.
+                    </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>HTML, CSS, Javascript, Bootstrap</li>
+                                <li><span>Programming Languages</span><br>C/C++, Python</li>
+                                <li><span>Tools</span><br>Microsoft Excel, Microsoft PowerBI, Matlab</li>
+                                <li><span>Version Control</span><br>Git & Github</li>
+                                <li><span>PLC</span><br>Simatic Manager, Tia Portal, RS Logix</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>CTTC | PLC Summer Intern</span><br>May 2023 - June 2023 | Bhubaneswar</li>
+                                <p>Learned about PLC & hardware configuration of PLC & do programming with 
+                                SIMATIC MANAGER, TIA PORTAL, MICRO LOGIX & with remote I/O and also work on some
+                                automation problem statement with demo board description.</p>
+                                <li><span>OPTCL | Summer Intern</span><br>May 2022 - June 2022 | Bhubaneswar</li>
+                                <p>Learned about transmission, power system and various electrical eqipment at sub-station
+                                    & also learn about mechanism of SLDC and how power trading done at IEX & PXIL.</p>
+                                <li><span>AWS Cloud virtual internship under AICTE by EduSkill</span><br>March 2022 - May 2022 </li>
+                                <p>Successfully completed 10 weeks AWS cloud virtual internship, gained knowledge about
+                                    cloud foundation & cloud architecture.</p>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>VSSUT BURLA</span><br>B. Tech (Electrical Engineering) | 2020 - Present</li>
+                                <p>CGPA : 9.11</p>
+                                <li><span>JNV KENDRAPARA</span><br>AISSCE (Class XII) | 2019</li>
+                                <p>Percentage : 94%</p>
+                                <li><span>JNV KENDRAPARA</span><br>AISSE (Class X) | 2017</li>
+                                <p>CGPA : 10.0</p>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------portfolio------------------------------>
+    <div id="portfolio">
+         <div class="container">
+            <h1 class="sub-title" data-aos="fade-up">My Projects</h1>
+            <div class="work-list">
+                <div class="work" data-aos="fade-up">
+                    <img src="images/pro-1.png">
+                    <div class="layer">
+                        <h3>Ecommerce Website</h3>
+                        <p>A multipage responsive e-commerce website including product catalog,
+                        cartpage & blog page using HTML, CSS and Javascript.</p>
+                        <a href="https://swaraj-96.github.io/AnonEcommerce.github.io/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+                <div class="work" data-aos="fade-up">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Drum Kit</h3>
+                        <p>Fun drum sound playng page using HTML, CSS and Javascript.   
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+                <div class="work" data-aos="fade-up">
+                    <img src="images/pro-3.png">
+                    <div class="layer">
+                        <h3>To-Do List</h3>
+                        <p>A To-Do List App or Website with HTML,CSS & Javascript.In this To Do list 
+                            we can add our task list and mark that task as completed or incomplete. 
+                            We can write the new task in the input box and click on the "Add" button then the
+                            new task will be added to the list.
+                            We can click on the task name to mark it as completed or incomplete task.   
+                        </p>
+                        <a href="https://swaraj-96.github.io/TodoWebsite.github.io/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="#" class="btn">See more</S></a>
+            
+
+         </div>
+    </div>
+    <!--------------------contact--------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left" data-aos="fade-up">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>pswaraj96@gmail.com</p>
+            
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href="https://in.linkedin.com/in/swaraj-pradhan-92b347173?trk=people-guest_people_search-card"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/swaraj_sj96"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                       
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/1aXt6DKou8LZSq09dcBcN7uI5ejZ_KyMk?usp=drive_link" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right" data-aos="fade-up">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Swaraj.</p>
+        </div>
+    </div>
+
+
+
+
+
+    
+   <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+      offset: 200,
+      duration: 1000,
+  });
+</script>
+    
+    
+</body>
+</html>
